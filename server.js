@@ -26,7 +26,7 @@ calculatorRouter.post('/subtract', (req, res) => {
     const num2 = Number(req.body.second);
 
     const result = num1 - num2;
-    res.send(`Subtraction result: ${result}`);
+    res.send({ 'result': result});
 });
 
 app.use(baseUrl, calculatorRouter);
