@@ -18,7 +18,7 @@ calculatorRouter.post('/add', (req, res) => {
     const num2 = Number(req.body.second);
 
     const result = num1 + num2;
-    res.send(`Addition result: ${result}`);
+    res.send({ 'result': result});
 });
 
 calculatorRouter.post('/subtract', (req, res) => {
