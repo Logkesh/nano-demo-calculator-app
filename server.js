@@ -10,7 +10,7 @@ app.use(express.json());
 const calculatorRouter = express.Router();
 
 calculatorRouter.get('/greeting', (req, res) => {
-    return res.send('Hello World');
+    return res.send('Hello World!');
 });
 
 calculatorRouter.post('/add', (req, res) => {
